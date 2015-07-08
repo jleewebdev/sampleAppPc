@@ -1,6 +1,4 @@
-<h1>This is the index page for</h1>
+<h1>This is the index page for Groups</h1>
 
 
-<% @groups.each do |group| %>
-	<p><%= link_to(group.name, group_path(group)) %></p>
-<% end %>
+<%= render @groups %>

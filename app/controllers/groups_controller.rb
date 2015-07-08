@@ -6,6 +6,7 @@ class GroupsController < ActionController::Base
 
 	def show
 		@group = Group.find(params[:id])
+		@users = User.all
 	end
 
 end
