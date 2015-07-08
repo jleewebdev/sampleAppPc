@@ -1,5 +1,8 @@
 <h1><%= @user.name  %></h1>
 
 <% @user.groups.each do |group| %>
-	<p><%= group.name %></p>
+	<p><%= link_to(group.name, group_path(group)) %></p>
 <%end %>
+
+
+<%= link_to "Back to users", users_path %>
