@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+require 'Pry'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
