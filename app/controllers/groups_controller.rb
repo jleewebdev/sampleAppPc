@@ -7,6 +7,7 @@ class GroupsController < ActionController::Base
 	def show
 		@group = Group.find(params[:id])
 		@users = User.all
+    @post = Post.new
 	end
 
 end

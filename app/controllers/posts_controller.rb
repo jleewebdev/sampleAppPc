@@ -3,4 +3,8 @@ class PostsController < ActionController::Base
 		@posts = Post.all
 	end
 
+  def show
+    @post = Post.new
+  end
+
 end
